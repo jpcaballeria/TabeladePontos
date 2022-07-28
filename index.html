@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tabela de classificação CS:GO</h1>
+    <table style="width: 100%;">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Vitorias</th>
+            <th>Empates</th>
+            <th>Derrotas</th>
+            <th>Pontos</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="tabelaTimes">
+    </tbody>
+        <form class="dados-times">
+            <input type="text" id="nomeNovoTime" > <br>
+            <input type="button" onclick="adicionarTime()" value="Adicionar time">
+            <input type="button" onclick="zerarPontos()" value="Zerar pontos">
+            <input type="button" onclick="deletarTimes()" value="Deletar times">
+        </form>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
